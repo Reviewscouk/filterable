@@ -8,7 +8,7 @@ use Reviewsio\Filterable\Filters\Filter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Request;
 
 /**
  * A trait that includes the necessary implementation for making a controllers index action
@@ -251,7 +251,7 @@ trait Filterable
      */
     protected function getInput()
     {
-        return Input::all();
+        return Request::all();
     }
 
     /**
@@ -405,6 +405,7 @@ trait Filterable
         app('view')->share('active_filter_collections', $this->getActiveCollections());
         app('view')->share('time_periods', DateRange::$time_periods);
     }
+
 
     /**
      * Optimizes the active filters using the the $optimized_suffixes attribute.
