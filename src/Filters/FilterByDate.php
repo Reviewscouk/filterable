@@ -1,9 +1,9 @@
 <?php
 
-namespace _20TRIES\Filterable\Filters;
+namespace Reviewsio\Filterable\Filters;
 
-use _20TRIES\DateRange;
-use _20TRIES\Filterable\Filterable;
+use Reviewsio\DateRange;
+use Reviewsio\Filterable\Filterable;
 use Carbon\Carbon;
 
 /**

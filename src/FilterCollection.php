@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable;
+namespace Reviewsio\Filterable;
 
 use Illuminate\Support\Collection;
 

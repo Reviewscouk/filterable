@@ -1,10 +1,10 @@
 <?php
 
-namespace _20TRIES\Filterable;
+namespace Reviewsio\Filterable;
 
-use _20TRIES\DateRange;
-use _20TRIES\Filterable\Exceptions\FilterValidationException;
-use _20TRIES\Filterable\Filters\Filter;
+use Reviewsio\DateRange;
+use Reviewsio\Filterable\Exceptions\FilterValidationException;
+use Reviewsio\Filterable\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Pagination\Paginator;

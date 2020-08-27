@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable\Exceptions;
+namespace Reviewsio\Filterable\Exceptions;
 
 /**
  * An exception that should be thrown to signify that an attempt has been made to access an invalid

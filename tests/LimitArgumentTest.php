@@ -1,8 +1,8 @@
 <?php
 
-namespace _20TRIES\Test;
+namespace Reviewsio\Test;
 
-use _20TRIES\Filterable\Filterable;
+use Reviewsio\Filterable\Filterable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\Paginator;
 

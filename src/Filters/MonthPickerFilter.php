@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable\Filters;
+namespace Reviewsio\Filterable\Filters;
 
 /**
  * A filter class that allows the filtering of results by a specific month.

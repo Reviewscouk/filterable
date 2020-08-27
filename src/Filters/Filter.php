@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable\Filters;
+namespace Reviewsio\Filterable\Filters;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

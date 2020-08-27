@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable\Exceptions;
+namespace Reviewsio\Filterable\Exceptions;
 
 /**
  * An exception that is used by the IndexFilterable class to report that the validation for a filter

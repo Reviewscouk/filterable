@@ -1,6 +1,6 @@
 <?php
 
-namespace _20TRIES\Filterable\Filters;
+namespace Reviewsio\Filterable\Filters;
 
 class DateFilter extends Filter
 {

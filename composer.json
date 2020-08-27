@@ -1,10 +1,10 @@
 {
-    "name": "20tries/filterable",
+    "name": "reviewsio/filterable",
     "description": "A package for supporting the filtering of controller action results.",
     "keywords": [
         "filter", "filterable", "laravel"
     ],
-    "homepage": "https://github.com/20tries/filterable",
+    "homepage": "https://github.com/Reviewscouk/filterable",
     "license": "MIT",
     "require": {
         "php" : ">=5.6",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "_20TRIES\\Filterable\\": "src"
+            "Reviewsio\\Filterable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "_20TRIES\\Test\\": "tests"
+            "Reviewsio\\Test\\": "tests"
         }
     },
     "scripts": {
