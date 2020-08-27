@@ -5,7 +5,6 @@ namespace Reviewsio\Filterable;
 use _20TRIES\DateRange;
 use Reviewsio\Filterable\Exceptions\FilterValidationException;
 use Reviewsio\Filterable\Filters\Filter;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Arr;
@@ -345,7 +344,7 @@ trait Filterable
     /**
      * Builds the query from the active filters.
      *
-     * @param Builder $query
+     * @param Illuminate\Database\Eloquent\Builder $query
      *
      * @return Paginator
      */
