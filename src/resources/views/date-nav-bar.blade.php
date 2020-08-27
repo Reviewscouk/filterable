@@ -9,16 +9,16 @@
         <div class="pull-right">
             <div class="btn-group">
                 <button id="prev_date_filter" type="button" class="btn btn-{{ $size or 'xs' }} btn-white" {{is_null($time_period) ? 'disabled' : ''}}><i class="fa fa-chevron-left"></i></button>
-                @if(in_array(\Reviewsio\DateRange::DAY, $time_periods))
+                @if(in_array(\_20TRIES\DateRange::DAY, $time_periods))
                     <button id="add_day_filter" class="btn btn-{{ $size or 'xs' }} btn-white {{ $time_period === 'Day' ? 'active' : ''}}">Day</button>
                 @endif
-                @if(in_array(\Reviewsio\DateRange::WEEK, $time_periods))
+                @if(in_array(\_20TRIES\DateRange::WEEK, $time_periods))
                     <button id="add_week_filter" class="btn btn-{{ $size or 'xs' }} btn-white {{ $time_period === 'Week' ? 'active' : ''}}">Week</button>
                 @endif
-                @if(in_array(\Reviewsio\DateRange::MONTH, $time_periods))
+                @if(in_array(\_20TRIES\DateRange::MONTH, $time_periods))
                     <button id="add_month_filter" class="btn btn-{{ $size or 'xs' }} btn-white {{ $time_period === 'Month' ? 'active' : ''}}">Month</button>
                 @endif
-                @if(in_array(\Reviewsio\DateRange::YEAR, $time_periods))
+                @if(in_array(\_20TRIES\DateRange::YEAR, $time_periods))
                     <button id="add_year_filter" class="btn btn-{{ $size or 'xs' }} btn-white {{ $time_period === 'Year' ? 'active' : ''}}">Year</button>
                 @endif
                 <button id="next_date_filter" type="button" class="btn btn-{{ $size or 'xs' }} btn-white" {{is_null($time_period) ? 'disabled' : ''}}><i class="fa fa-chevron-right"></i> </button>

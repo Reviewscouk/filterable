@@ -2,7 +2,7 @@
 
 namespace Reviewsio\Filterable\Filters;
 
-use Reviewsio\DateRange;
+use _20TRIES\DateRange;
 use Reviewsio\Filterable\Filterable;
 use Carbon\Carbon;
 

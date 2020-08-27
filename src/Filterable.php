@@ -2,7 +2,7 @@
 
 namespace Reviewsio\Filterable;
 
-use Reviewsio\DateRange;
+use _20TRIES\DateRange;
 use Reviewsio\Filterable\Exceptions\FilterValidationException;
 use Reviewsio\Filterable\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;

@@ -179,17 +179,17 @@
 
         @if( ! is_null($time_period))
             @if($time_period == 'Day')
-                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \Reviewsio\DateRange::DAY, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
-                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \Reviewsio\DateRange::DAY, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \_20TRIES\DateRange::DAY, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \_20TRIES\DateRange::DAY, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
             @elseif($time_period == 'Week')
-                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \Reviewsio\DateRange::WEEK, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
-                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \Reviewsio\DateRange::WEEK, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \_20TRIES\DateRange::WEEK, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \_20TRIES\DateRange::WEEK, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
             @elseif($time_period == 'Month')
-                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \Reviewsio\DateRange::MONTH, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
-                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \Reviewsio\DateRange::MONTH, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \_20TRIES\DateRange::MONTH, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \_20TRIES\DateRange::MONTH, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
             @elseif($time_period == 'Year')
-                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \Reviewsio\DateRange::YEAR, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
-                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \Reviewsio\DateRange::YEAR, false, true)->toInclusiveString('d/m/Y', ' - ') }}"
+                var next_date_range = "{{ head($date_filter->getValues())->offset(1, \_20TRIES\DateRange::YEAR, false, true)->toInclusiveString('d/m/Y', ' - ') }}";
+                var prev_date_range = "{{ head($date_filter->getValues())->offset(-1, \_20TRIES\DateRange::YEAR, false, true)->toInclusiveString('d/m/Y', ' - ') }}"
             @endif
         @endif
 
