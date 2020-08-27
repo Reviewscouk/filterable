@@ -34,8 +34,9 @@ class DateFilter extends Filter
         switch ($operator) {
             case 'before':
                 return [
-                    DateRange::before(Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')
-                        ->startOfDay())
+                    DateRange::before(
+                        Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')->startOfDay()
+                    )
                 ];
             case 'in':
                 return [new DateRange(
@@ -49,8 +50,9 @@ class DateFilter extends Filter
                 )];
             case 'after':
                 return [
-                    DateRange::after(Carbon::createFromFormat(Filterable::$date_format, last($dates), 'GB')
-                        ->endOfDay())
+                    DateRange::after(
+                        Carbon::createFromFormat(Filterable::$date_format, last($dates), 'GB')->endOfDay()
+                    )
                 ];
         }
     }
