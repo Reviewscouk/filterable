@@ -234,7 +234,7 @@ trait Filterable
         $this->setupPagination($pagination_options);
 
         // Setup Ordering
-        $this->setupOrdering(array_only($options, ['order']), $resolve_input);
+        $this->setupOrdering(Arr::only($options, ['order']), $resolve_input);
 
         // Share properties
         $share_properties = Arr::get($options, 'share_properties', true);
@@ -388,7 +388,7 @@ trait Filterable
 
         $paginator = $query->simplePaginate($limit);
 
-        $paginator = $paginator->appends(array_except($this->getInput(), ['page']));
+        $paginator = $paginator->appends(Arr::except($this->getInput(), ['page']));
 
         return $paginator->toArray();
     }
@@ -424,7 +424,7 @@ trait Filterable
             }
         }
 
-        return array_except($this->active_filters, $remove);
+        return Arr::except($this->active_filters, $remove);
     }
 
     /**
