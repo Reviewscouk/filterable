@@ -33,7 +33,10 @@ class DateFilter extends Filter
 
         switch ($operator) {
             case 'before':
-                return [DateRange::before(Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')->startOfDay())];
+                return [
+                    DateRange::before(Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')
+                        ->startOfDay())
+                ];
             case 'in':
                 return [new DateRange(
                     Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')->subDay()->endOfDay(),
@@ -45,7 +48,10 @@ class DateFilter extends Filter
                     Carbon::createFromFormat(Filterable::$date_format, head($dates), 'GB')->subDay()->endOfDay()
                 )];
             case 'after':
-                return [DateRange::after(Carbon::createFromFormat(Filterable::$date_format, last($dates), 'GB')->endOfDay())];
+                return [
+                    DateRange::after(Carbon::createFromFormat(Filterable::$date_format, last($dates), 'GB')
+                        ->endOfDay())
+                ];
         }
     }
 
@@ -54,7 +60,11 @@ class DateFilter extends Filter
      */
     public function validate()
     {
-        return \Validator::make(['operator' => head($this->values), 'date' => last($this->values)],
+        return \Validator::make(
+            [
+                'operator' => head($this->values),
+                'date' => last($this->values)
+            ],
             [
                 'operator' => 'required|in:before,in,not_in,after',
                 'date'     => 'required|date_format:d/m/Y - d/m/Y',
