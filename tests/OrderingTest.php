@@ -94,9 +94,9 @@ class OrderingTest extends \PHPUnit\Framework\TestCase
 
     public function test_ordering_is_passed_to_query_builder_if_order_attribute_has_been_set()
     {
-        $mock_query = $this->getMock(Builder::class, ['simplePaginate', 'orderBy'], [], '', false);
+        $mock_query = $this->createMock(Builder::class, ['simplePaginate', 'orderBy'], [], '', false);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class, ['appends', 'toArray'], [], '', false);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -124,9 +124,9 @@ class OrderingTest extends \PHPUnit\Framework\TestCase
 
     public function test_ordering_is_not_passed_to_query_builder_if_no_orderings_are_input()
     {
-        $mock_query = $this->getMock(Builder::class, ['simplePaginate', 'orderBy'], [], '', false);
+        $mock_query = $this->createMock(Builder::class, ['simplePaginate', 'orderBy'], [], '', false);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class, ['appends', 'toArray'], [], '', false);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)

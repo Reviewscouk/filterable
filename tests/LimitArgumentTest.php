@@ -25,9 +25,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_is_applied_to_query_by_default()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -52,9 +52,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_limit_is_resolved_from_input_if_no_limit_option_is_passed()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -79,9 +79,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_limit_option_overrides_input()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -106,9 +106,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_default_limit_is_overridden_by_limit_option_passed_to_initilise_filters()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -133,9 +133,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_default_lower_limit_boundary_is_enforced()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -161,9 +161,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_default_upper_limit_boundary_is_enforced()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -189,9 +189,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_default_lower_limit_is_customisable()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -217,9 +217,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_default_upper_limit_is_customisable()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -245,9 +245,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_appends_current_input()
     {
-        $mock_query = $this->getMock(Builder::class, ['simplePaginate'], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -281,9 +281,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_not_disableable_by_default()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, [], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -302,9 +302,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_is_disabled_by_passing_negative_value_when_disabling_is_configured()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['simplePaginate'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -323,9 +323,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_is_not_disabled_by_default_when_disabling_is_configured()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -345,9 +345,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_pagination_to_array_is_returned_when_pagination_is_active()
     {
-        $mock_query = $this->getMock(Builder::class, [], [], '', false);
+        $mock_query = $this->createMock(Builder::class);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
@@ -373,9 +373,9 @@ class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_builder_to_array_is_returned_wrapped_in_array_containing_data_attribute_when_pagination_is_inactive()
     {
-        $mock_query = $this->getMock(Builder::class, ['get', 'toArray'], [], '', false);
+        $mock_query = $this->createMock(Builder::class, ['get', 'toArray'], [], '', false);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['simplePaginate'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class, ['simplePaginate'], [], '', false);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)

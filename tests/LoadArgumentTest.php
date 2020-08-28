@@ -31,9 +31,9 @@ class LoadArgumentTest extends \PHPUnit\Framework\TestCase
 
     public function test_loads_are_passed_to_builder()
     {
-        $mock_query = $this->getMock(Builder::class, ['simplePaginate', 'with'], [], '', false);
+        $mock_query = $this->createMock(Builder::class, ['simplePaginate', 'with'], [], '', false);
 
-        $mock_paginator = $this->getMock(Paginator::class, ['appends', 'toArray'], [], '', false);
+        $mock_paginator = $this->createMock(Paginator::class, ['appends', 'toArray'], [], '', false);
 
         $mock = $this
             ->getMockBuilder(Filterable::class)
