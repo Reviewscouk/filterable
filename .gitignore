@@ -31,3 +31,5 @@ Temporary Items
 
 # PHPStorm
 .idea
+
+/tests/cache
