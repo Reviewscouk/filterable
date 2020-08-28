@@ -6,7 +6,7 @@ use Reviewsio\Filterable\Filterable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\Paginator;
 
-class LimitArgumentTest extends \PHPUnit_Framework_TestCase
+class LimitArgumentTest extends \PHPUnit\Framework\TestCase
 {
     public function test_resolution_is_disabled_by_resolve_input_option()
     {

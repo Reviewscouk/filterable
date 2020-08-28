@@ -11,7 +11,7 @@ use Illuminate\Pagination\Paginator;
  *
  * @since v0
  */
-class LoadArgumentTest extends \PHPUnit_Framework_TestCase
+class LoadArgumentTest extends \PHPUnit\Framework\TestCase
 {
     public function test_load_argument_is_correctly_interpreted()
     {

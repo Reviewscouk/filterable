@@ -6,7 +6,7 @@ use Reviewsio\Filterable\Filterable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\Paginator;
 
-class OrderingTest extends \PHPUnit_Framework_TestCase
+class OrderingTest extends \PHPUnit\Framework\TestCase
 {
     public function test_ordering_is_configured_from_options()
     {
