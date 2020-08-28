@@ -2,14 +2,16 @@
     "name": "reviewsio/filterable",
     "description": "A package for supporting the filtering of controller action results.",
     "keywords": [
-        "filter", "filterable", "laravel"
+        "filter",
+        "filterable",
+        "laravel"
     ],
     "homepage": "https://github.com/Reviewscouk/filterable",
     "license": "MIT",
     "require": {
-        "php" : ">=7.2.5",
+        "php": ">=7.2.5",
         "nesbot/carbon": "^2.0",
-        "20tries/date_range": "0.0.*",
+        "reviewsio/date-range": "^1.0",
         "illuminate/support": "^7.0",
         "illuminate/contracts": "^7.0",
         "illuminate/http": "^7.0",

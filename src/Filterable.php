@@ -2,7 +2,7 @@
 
 namespace Reviewsio\Filterable;
 
-use _20TRIES\DateRange;
+use Reviewsio\DateRange;
 use Reviewsio\Filterable\Exceptions\FilterValidationException;
 use Reviewsio\Filterable\Filters\Filter;
 use Illuminate\Http\JsonResponse;
