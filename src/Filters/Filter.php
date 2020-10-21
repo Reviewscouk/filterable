@@ -4,6 +4,7 @@ namespace Reviewsio\Filterable\Filters;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
+use Illuminate\Support\Str;
 
 /**
  * A filter that can be used with the Filterable trait to filter query results.
@@ -129,7 +130,7 @@ abstract class Filter implements Arrayable, Jsonable
     {
         $instance = new static();
 
-        $instance->method = camel_case($method);
+        $instance->method = Str::camel($method);
 
         $instance->name = $method;
 
