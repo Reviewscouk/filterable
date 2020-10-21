@@ -8,6 +8,7 @@ use Reviewsio\Filterable\Filters\Filter;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Request;
 
 /**
@@ -492,7 +493,7 @@ trait Filterable
         }
 
         foreach ($filter_data as $key => $value) {
-            $set = 'set'.ucfirst(camel_case($key));
+            $set = 'set'.ucfirst(Str::camel($key));
 
             $filter->$set($value);
         }
