@@ -9,17 +9,17 @@
     "homepage": "https://github.com/Reviewscouk/filterable",
     "license": "MIT",
     "require": {
-        "php": ">=7.2.5",
+        "php": "^7.2|^8.0",
         "nesbot/carbon": "^2.0",
         "reviewsio/date-range": "^1.0",
-        "illuminate/support": "^7.0",
-        "illuminate/contracts": "^7.0",
-        "illuminate/http": "^7.0",
-        "illuminate/pagination": "^7.0"
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/contracts": "^7.0|^8.0",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/pagination": "^7.0|^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0",
-        "illuminate/database": "^7.0",
+        "illuminate/database": "^7.0|^8.0",
         "mockery/mockery": "0.9.*"
     },
     "autoload": {
